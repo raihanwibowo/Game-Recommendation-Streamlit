@@ -5,15 +5,15 @@ from dotenv import load_dotenv
 # Load environment variables from .env file
 load_dotenv()
 
-from ui import (
+from ui.ui import (
     setup_page_config, 
     render_title, 
     render_sidebar, 
     render_chat_messages, 
     get_chat_input
 )
-from model import get_llm_response
-from utils import save_chat_history, load_chat_history, delete_chat_history
+from packages.model import get_llm_response
+from packages.utils import save_chat_history, load_chat_history, delete_chat_history
 
 
 # Page config

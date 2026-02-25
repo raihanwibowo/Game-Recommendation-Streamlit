@@ -1,7 +1,7 @@
 """UI components and layout"""
 import streamlit as st
 import os
-from model import get_available_models
+from packages.model import get_available_models
 
 
 def setup_page_config():

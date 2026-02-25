@@ -4,7 +4,7 @@ import json
 import os
 import streamlit as st
 from datetime import datetime
-from utils import search_internet
+from packages.utils import search_internet
 
 
 def get_available_models():
