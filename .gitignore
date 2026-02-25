@@ -17,4 +17,4 @@ ENV/
 .idea/
 
 # Data files (optional - remove if you want to track chat history)
-data/chat_history.json
+# data/chat_history.json
