@@ -1,6 +1,7 @@
 """Main application entry point"""
 import streamlit as st
 from dotenv import load_dotenv
+import uuid
 
 # Load environment variables from .env file
 load_dotenv()
@@ -13,15 +14,22 @@ from ui.ui import (
     get_chat_input
 )
 from packages.model import get_llm_response
-from packages.utils import save_chat_history, load_chat_history, delete_chat_history
+from packages.database import get_database
 
+# Initialize database
+db = get_database()
 
 # Page config
 setup_page_config()
 
 # Initialize session state
+if 'session_id' not in st.session_state:
+    st.session_state.session_id = str(uuid.uuid4())
+    db.create_session(st.session_state.session_id)
+
 if 'messages' not in st.session_state:
-    st.session_state.messages = load_chat_history()
+    # Load messages from database
+    st.session_state.messages = db.get_messages(st.session_state.session_id)
 
 if 'display_messages' not in st.session_state:
     st.session_state.display_messages = []
@@ -43,6 +51,10 @@ if prompt := get_chat_input():
     # Add user message to both display and persistent storage
     st.session_state.messages.append({"role": "user", "content": prompt})
     st.session_state.display_messages.append({"role": "user", "content": prompt})
+    
+    # Save to database
+    db.save_message(st.session_state.session_id, "user", prompt)
+    
     with st.chat_message("user"):
         st.markdown(prompt)
     
@@ -55,6 +67,7 @@ if prompt := get_chat_input():
         )
         st.session_state.messages.append({"role": "assistant", "content": response})
         st.session_state.display_messages.append({"role": "assistant", "content": response})
-    
-    # Always save chat history for persistent knowledge
-    save_chat_history(st.session_state.messages)
+        
+        # Save to database
+        db.save_message(st.session_state.session_id, "assistant", response)
+
