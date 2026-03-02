@@ -1,0 +1,58 @@
+{
+  "rpg": {
+    "name": "RPG (Role-Playing Game)",
+    "description": "Games where players assume the roles of characters in a fictional setting. Features character progression, story-driven gameplay, and often includes quests and exploration.",
+    "subgenres": ["Action RPG", "JRPG", "Western RPG", "Tactical RPG"],
+    "popular_games": ["The Witcher 3", "Baldur's Gate 3", "Final Fantasy XVI", "Persona 5"],
+    "characteristics": ["Character progression", "Story-driven", "Quests", "Exploration", "Dialogue choices"]
+  },
+  "action": {
+    "name": "Action",
+    "description": "Fast-paced games emphasizing physical challenges, hand-eye coordination, and reaction time. Often features combat and movement mechanics.",
+    "subgenres": ["Hack and Slash", "Beat 'em up", "Platform", "Shooter"],
+    "popular_games": ["God of War", "Devil May Cry 5", "Bayonetta 3", "Doom Eternal"],
+    "characteristics": ["Fast-paced combat", "Reflexes", "Boss battles", "Combo systems"]
+  },
+  "horror": {
+    "name": "Horror",
+    "description": "Games designed to frighten and unsettle players through atmosphere, jump scares, and psychological tension.",
+    "subgenres": ["Survival Horror", "Psychological Horror", "Action Horror"],
+    "popular_games": ["Resident Evil 4", "Silent Hill 2", "Amnesia", "Outlast"],
+    "characteristics": ["Atmospheric tension", "Limited resources", "Puzzle-solving", "Survival elements"]
+  },
+  "strategy": {
+    "name": "Strategy",
+    "description": "Games requiring careful planning and tactical thinking to achieve victory. Emphasizes decision-making over reflexes.",
+    "subgenres": ["Real-Time Strategy", "Turn-Based Strategy", "4X", "Tower Defense"],
+    "popular_games": ["Civilization VI", "StarCraft II", "XCOM 2", "Total War"],
+    "characteristics": ["Planning", "Resource management", "Tactical thinking", "Long-term strategy"]
+  },
+  "indie": {
+    "name": "Indie",
+    "description": "Games developed by independent studios or individuals. Often features innovative gameplay, unique art styles, and creative storytelling.",
+    "subgenres": ["Varies widely"],
+    "popular_games": ["Hollow Knight", "Celeste", "Hades", "Stardew Valley"],
+    "characteristics": ["Innovation", "Unique art", "Creative gameplay", "Personal vision"]
+  },
+  "open_world": {
+    "name": "Open World",
+    "description": "Games featuring large, explorable environments with freedom to approach objectives in various ways.",
+    "subgenres": ["Sandbox", "Action-Adventure"],
+    "popular_games": ["Elden Ring", "Red Dead Redemption 2", "Zelda TOTK", "GTA V"],
+    "characteristics": ["Exploration", "Freedom", "Side quests", "Large maps", "Non-linear progression"]
+  },
+  "roguelike": {
+    "name": "Roguelike",
+    "description": "Games featuring procedurally generated levels, permanent death, and run-based progression.",
+    "subgenres": ["Roguelite", "Dungeon Crawler"],
+    "popular_games": ["Hades", "Dead Cells", "Binding of Isaac", "Slay the Spire"],
+    "characteristics": ["Permadeath", "Procedural generation", "Run-based", "Meta-progression"]
+  },
+  "simulation": {
+    "name": "Simulation",
+    "description": "Games that simulate real-world activities or systems, from farming to city building.",
+    "subgenres": ["Life Sim", "Management", "Vehicle Sim"],
+    "popular_games": ["Stardew Valley", "The Sims 4", "Cities Skylines", "Flight Simulator"],
+    "characteristics": ["Realistic systems", "Management", "Creativity", "Relaxing gameplay"]
+  }
+}

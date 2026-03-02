@@ -1,0 +1,352 @@
+{
+  "elden_ring": {
+    "name": "Elden Ring",
+    "description": "An action RPG developed by FromSoftware and published by Bandai Namco. Features open-world exploration, challenging combat, and deep lore created in collaboration with George R.R. Martin.",
+    "genres": ["Action RPG", "Souls-like", "Open World"],
+    "platforms": ["PC", "PlayStation 5", "PlayStation 4", "Xbox Series X/S", "Xbox One"],
+    "release_year": 2022,
+    "rating": 9.5,
+    "developer": "FromSoftware",
+    "similar_games": ["Dark Souls 3", "Bloodborne", "Sekiro"]
+  },
+  "baldurs_gate_3": {
+    "name": "Baldur's Gate 3",
+    "description": "A story-rich RPG based on Dungeons & Dragons 5th edition. Features turn-based combat, deep character customization, and meaningful choices that affect the story.",
+    "genres": ["RPG", "Turn-Based", "Fantasy"],
+    "platforms": ["PC", "PlayStation 5", "Xbox Series X/S"],
+    "release_year": 2023,
+    "rating": 9.6,
+    "developer": "Larian Studios",
+    "similar_games": ["Divinity Original Sin 2", "Pillars of Eternity", "Pathfinder"]
+  },
+  "the_witcher_3": {
+    "name": "The Witcher 3: Wild Hunt",
+    "description": "An open-world action RPG following Geralt of Rivia. Features a massive world, branching storylines, and morally complex choices.",
+    "genres": ["Action RPG", "Open World", "Fantasy"],
+    "platforms": ["PC", "PlayStation 5", "PlayStation 4", "Xbox Series X/S", "Xbox One", "Nintendo Switch"],
+    "release_year": 2015,
+    "rating": 9.3,
+    "developer": "CD Projekt Red",
+    "similar_games": ["Skyrim", "Dragon Age Inquisition", "Assassin's Creed Valhalla"]
+  },
+  "hollow_knight": {
+    "name": "Hollow Knight",
+    "description": "A challenging 2D metroidvania with beautiful hand-drawn art, tight controls, and atmospheric exploration.",
+    "genres": ["Metroidvania", "Platformer", "Indie"],
+    "platforms": ["PC", "PlayStation 4", "Xbox One", "Nintendo Switch"],
+    "release_year": 2017,
+    "rating": 9.0,
+    "developer": "Team Cherry",
+    "similar_games": ["Ori and the Blind Forest", "Dead Cells", "Celeste"]
+  },
+  "god_of_war": {
+    "name": "God of War (2018)",
+    "description": "A reimagining of the God of War series featuring Kratos and his son Atreus in Norse mythology. Combines action combat with emotional storytelling.",
+    "genres": ["Action", "Adventure", "Mythology"],
+    "platforms": ["PC", "PlayStation 5", "PlayStation 4"],
+    "release_year": 2018,
+    "rating": 9.4,
+    "developer": "Santa Monica Studio",
+    "similar_games": ["God of War Ragnarök", "The Last of Us", "Horizon Zero Dawn"]
+  },
+  "stardew_valley": {
+    "name": "Stardew Valley",
+    "description": "A farming simulation RPG where you inherit your grandfather's farm. Features farming, fishing, mining, relationships, and community building.",
+    "genres": ["Simulation", "RPG", "Indie"],
+    "platforms": ["PC", "PlayStation 4", "Xbox One", "Nintendo Switch", "Mobile"],
+    "release_year": 2016,
+    "rating": 9.1,
+    "developer": "ConcernedApe",
+    "similar_games": ["Harvest Moon", "Animal Crossing", "My Time at Portia"]
+  },
+  "hades": {
+    "name": "Hades",
+    "description": "A roguelike dungeon crawler where you play as Zagreus escaping the underworld. Features fast-paced combat, Greek mythology, and compelling narrative.",
+    "genres": ["Roguelike", "Action", "Indie"],
+    "platforms": ["PC", "PlayStation 5", "PlayStation 4", "Xbox Series X/S", "Xbox One", "Nintendo Switch"],
+    "release_year": 2020,
+    "rating": 9.2,
+    "developer": "Supergiant Games",
+    "similar_games": ["Dead Cells", "Binding of Isaac", "Risk of Rain 2"]
+  },
+  "minecraft": {
+    "name": "Minecraft",
+    "description": "A sandbox game focused on creativity, exploration, and survival. Build anything you can imagine with blocks in procedurally generated worlds.",
+    "genres": ["Sandbox", "Survival", "Creative"],
+    "platforms": ["PC", "PlayStation", "Xbox", "Nintendo Switch", "Mobile"],
+    "release_year": 2011,
+    "rating": 9.0,
+    "developer": "Mojang Studios",
+    "similar_games": ["Terraria", "Valheim", "No Man's Sky"]
+  },
+  "resident_evil_4": {
+    "name": "Resident Evil 4 Remake",
+    "description": "A survival horror game following Leon Kennedy's mission to rescue the president's daughter. Features intense combat and atmospheric horror.",
+    "genres": ["Horror", "Action", "Survival"],
+    "platforms": ["PC", "PlayStation 5", "Xbox Series X/S"],
+    "release_year": 2023,
+    "rating": 9.3,
+    "developer": "Capcom",
+    "similar_games": ["Resident Evil 2 Remake", "The Last of Us", "Dead Space"]
+  },
+  "zelda_totk": {
+    "name": "The Legend of Zelda: Tears of the Kingdom",
+    "description": "An open-world adventure game and sequel to Breath of the Wild. Features innovative building mechanics and expansive exploration.",
+    "genres": ["Action", "Adventure", "Open World"],
+    "platforms": ["Nintendo Switch"],
+    "release_year": 2023,
+    "rating": 9.7,
+    "developer": "Nintendo",
+    "similar_games": ["Breath of the Wild", "Genshin Impact", "Immortals Fenyx Rising"]
+  },
+  "hades_ii": {
+    "name": "Hades II",
+    "description": "A god-like rogue-like dungeon crawler where you play as Melinoë, the Princess of the Underworld, to confront the Titan of Time. Features deep narrative and addictive combat.",
+    "genres": ["Action", "Roguelike", "Dungeon Crawler"],
+    "platforms": ["PC", "PlayStation 5", "Xbox Series X/S", "Switch 2"],
+    "release_year": 2025,
+    "rating": 9.5,
+    "developer": "Supergiant Games",
+    "similar_games": ["Hades", "Bastion", "Dead Cells"]
+  },
+  "hollow_knight_silksong": {
+    "name": "Hollow Knight: Silksong",
+    "description": "The long-awaited sequel to the award-winning action-adventure. Explore a haunted kingdom of silk and song as Hornet, the princess-protector of Hallownest.",
+    "genres": ["Metroidvania", "Action", "Platformer"],
+    "platforms": ["PC", "PlayStation 5", "Xbox Series X/S", "Nintendo Switch"],
+    "release_year": 2025,
+    "rating": 9.4,
+    "developer": "Team Cherry",
+    "similar_games": ["Hollow Knight", "Ori and the Will of the Wisps", "Blasphemous"]
+  },
+  "crimson_desert": {
+    "name": "Crimson Desert",
+    "description": "An open-world action-adventure featuring a gritty story of mercenaries fighting for survival in the vast continent of Pywel. Features high-fidelity combat and dragon riding.",
+    "genres": ["Action RPG", "Open World", "Fantasy"],
+    "platforms": ["PC", "PlayStation 5", "Xbox Series X/S"],
+    "release_year": 2025,
+    "rating": 9.1,
+    "developer": "Pearl Abyss",
+    "similar_games": ["The Witcher 3", "Elden Ring", "Black Desert"]
+  },
+  "marvels_wolverine": {
+    "name": "Marvel's Wolverine",
+    "description": "A standalone game from Insomniac focusing on Logan. Expect a darker, more mature tone with visceral combat and a cinematic narrative true to the character's roots.",
+    "genres": ["Action", "Adventure", "Superhero"],
+    "platforms": ["PlayStation 5"],
+    "release_year": 2026,
+    "rating": 9.2,
+    "developer": "Insomniac Games",
+    "similar_games": ["Marvel's Spider-Man", "God of War Ragnarök", "X-Men Origins: Wolverine"]
+  },
+  "gears_of_war_e_day": {
+    "name": "Gears of War: E-Day",
+    "description": "A prequel set 14 years before the original game, depicting the emergence of the Locust Horde through the eyes of Marcus Fenix and Dominic Santiago.",
+    "genres": ["Third-Person Shooter", "Action", "Sci-Fi"],
+    "platforms": ["PC", "Xbox Series X/S"],
+    "release_year": 2026,
+    "rating": 9.0,
+    "developer": "The Coalition",
+    "similar_games": ["Gears 5", "Halo Infinite", "Warhammer 40k: Space Marine 2"]
+  },
+  "slay_the_spire_2": {
+    "name": "Slay the Spire 2",
+    "description": "The sequel to the definitive roguelike deckbuilder. Return to the Spire with new characters, new cards, and new ways to play in a completely rebuilt engine.",
+    "genres": ["Roguelike", "Deckbuilding", "Strategy"],
+    "platforms": ["PC"],
+    "release_year": 2026,
+    "rating": 9.3,
+    "developer": "Mega Crit",
+    "similar_games": ["Slay the Spire", "Monster Train", "Balatro"]
+  },
+  "resident_evil_requiem": {
+    "name": "Resident Evil Requiem",
+    "description": "The latest mainline entry in the survival horror series. Features a dual-protagonist structure and a return to more atmospheric, claustrophobic horror environments.",
+    "genres": ["Survival Horror", "Action"],
+    "platforms": ["PC", "PlayStation 5", "Xbox Series X/S", "Switch 2"],
+    "release_year": 2026,
+    "rating": 9.1,
+    "developer": "Capcom",
+    "similar_games": ["Resident Evil Village", "Silent Hill 2", "Alan Wake 2"]
+  },
+  "subnautica_2": {
+    "name": "Subnautica 2",
+    "description": "A sequel to the beloved underwater survival game, introducing a brand-new alien world to explore and, for the first time, optional 4-player cooperative play.",
+    "genres": ["Survival", "Adventure", "Sci-Fi"],
+    "platforms": ["PC", "Xbox Series X/S"],
+    "release_year": 2026,
+    "rating": 8.8,
+    "developer": "Unknown Worlds",
+    "similar_games": ["Subnautica", "No Man's Sky", "The Forest"]
+  },
+  "claired_obscur_expedition_33": {
+    "name": "Clair Obscur: Expedition 33",
+    "description": "A reactive turn-based RPG inspired by Belle Époque France. Players lead an expedition to destroy the Paintress before she erases more of humanity.",
+    "genres": ["Turn-Based RPG", "Fantasy", "Action"],
+    "platforms": ["PC", "PlayStation 5", "Xbox Series X/S"],
+    "release_year": 2025,
+    "rating": 9.2,
+    "developer": "Sandfall Interactive",
+    "similar_games": ["Final Fantasy VII Rebirth", "Persona 5 Royal", "Lost Odyssey"]
+  },
+  "metroid_prime_4_beyond": {
+    "name": "Metroid Prime 4: Beyond",
+    "description": "Samus Aran returns for a new first-person adventure across the stars. Master her signature abilities to survive a war against the Space Pirates and Sylux.",
+    "genres": ["Action-Adventure", "FPS", "Sci-Fi"],
+    "platforms": ["Nintendo Switch", "Switch 2"],
+    "release_year": 2025,
+    "rating": 9.4,
+    "developer": "Retro Studios",
+    "similar_games": ["Metroid Prime Remastered", "Halo", "Doom Eternal"]
+  },
+  "control_resonant": {
+    "name": "Control Resonant",
+    "description": "The sequel to the 2019 supernatural hit. Jesse Faden faces a new internal and external threat within the Oldest House as the FBC expands its reach.",
+    "genres": ["Action", "Supernatural", "Third-Person Shooter"],
+    "platforms": ["PC", "PlayStation 5", "Xbox Series X/S"],
+    "release_year": 2026,
+    "rating": 8.9,
+    "developer": "Remedy Entertainment",
+    "similar_games": ["Control", "Alan Wake 2", "Quantum Break"]
+  },
+  "phantom_blade_zero": {
+    "name": "Phantom Blade Zero",
+    "description": "A fast-paced 'Kung-fu-punk' action game featuring stylish swordplay and a dark fantasy world. Players take on the role of an elite assassin with 66 days to live.",
+    "genres": ["Action", "Souls-like", "Hack and Slash"],
+    "platforms": ["PC", "PlayStation 5"],
+    "release_year": 2026,
+    "rating": 8.7,
+    "developer": "S-GAME",
+    "similar_games": ["Sekiro", "Nioh 2", "Devil May Cry 5"]
+  },
+  "dragon_quest_vii_reimagined": {
+    "name": "Dragon Quest VII Reimagined",
+    "description": "A ground-up remake of the massive PS1 classic. Explore an archipelago of islands as you travel through time to restore the world to its former glory.",
+    "genres": ["JRPG", "Adventure", "Turn-Based"],
+    "platforms": ["PC", "PlayStation 5", "Xbox Series X/S", "Switch 2"],
+    "release_year": 2026,
+    "rating": 9.0,
+    "developer": "Square Enix",
+    "similar_games": ["Dragon Quest XI", "Final Fantasy VII Rebirth", "Bravely Default II"]
+  },
+  "fable": {
+    "name": "Fable",
+    "description": "A reboot of the beloved franchise. Return to Albion, a land of heroes and villains, where your choices shape the world and your character's legacy.",
+    "genres": ["Action RPG", "Open World", "Fantasy"],
+    "platforms": ["PC", "Xbox Series X/S"],
+    "release_year": 2026,
+    "rating": 8.8,
+    "developer": "Playground Games",
+    "similar_games": ["The Witcher 3", "Skyrim", "Kingdom Come: Deliverance"]
+  },
+  "south_of_midnight": {
+    "name": "South of Midnight",
+    "description": "A third-person action-adventure set in the American Deep South. Play as Hazel, a Weaver of magic, as she repairs a broken world and confronts mythical creatures.",
+    "genres": ["Action-Adventure", "Fantasy"],
+    "platforms": ["PC", "Xbox Series X/S"],
+    "release_year": 2025,
+    "rating": 8.6,
+    "developer": "Compulsion Games",
+    "similar_games": ["Kena: Bridge of Spirits", "Beyond Good & Evil", "Alice: Madness Returns"]
+  },
+  "doom_the_dark_ages": {
+    "name": "DOOM: The Dark Ages",
+    "description": "The origin story of the Doom Slayer's rage. Set in a dark fantasy medieval world, use shields, morning stars, and mechs to crush the demonic legions.",
+    "genres": ["FPS", "Action", "Horror"],
+    "platforms": ["PC", "PlayStation 5", "Xbox Series X/S"],
+    "release_year": 2025,
+    "rating": 9.3,
+    "developer": "id Software",
+    "similar_games": ["DOOM Eternal", "Quake", "Painkiller"]
+  },
+  "hytale": {
+    "name": "Hytale",
+    "description": "A massive sandbox RPG that combines the creative freedom of Minecraft with the depth of a traditional RPG. Features procedural worlds and extensive modding tools.",
+    "genres": ["Sandbox", "RPG", "Adventure"],
+    "platforms": ["PC"],
+    "release_year": 2026,
+    "rating": 9.0,
+    "developer": "Hypixel Studios",
+    "similar_games": ["Minecraft", "Terraria", "Vintage Story"]
+  },
+  "beyond_good_and_evil_2": {
+    "name": "Beyond Good & Evil 2",
+    "description": "A spiritual successor to the cult classic. Travel through System 3, a solar system where corporations fight for power and hybrid slaves fight for freedom.",
+    "genres": ["Action-Adventure", "Open World", "Sci-Fi"],
+    "platforms": ["PC", "PlayStation 5", "Xbox Series X/S"],
+    "release_year": 2026,
+    "rating": 8.5,
+    "developer": "Ubisoft",
+    "similar_games": ["Starfield", "Mass Effect", "Outer Wilds"]
+  },
+  "mixtape": {
+    "name": "Mixtape",
+    "description": "A coming-of-age adventure following three teenagers on their last night of high school, experienced through a series of vignettes set to a legendary soundtrack.",
+    "genres": ["Narrative Adventure", "Music"],
+    "platforms": ["PC", "PlayStation 5", "Xbox Series X/S"],
+    "release_year": 2026,
+    "rating": 8.9,
+    "developer": "Beethoven & Dinosaur",
+    "similar_games": ["The Artful Escape", "Life is Strange", "Night in the Woods"]
+  },
+  "arknights_endfield": {
+    "name": "Arknights: Endfield",
+    "description": "An action RPG set in the Arknights universe. Players lead a team to explore the planet Talos-II, build bases, and engage in real-time tactical combat.",
+    "genres": ["Action RPG", "Strategy", "Sci-Fi"],
+    "platforms": ["PC", "PlayStation 5", "iOS", "Android"],
+    "release_year": 2026,
+    "rating": 8.7,
+    "developer": "Mountain Contour",
+    "similar_games": ["Genshin Impact", "Xenoblade Chronicles", "Tower of Fantasy"]
+  },
+  "tomb_raider_legacy_of_atlantis": {
+    "name": "Tomb Raider: Legacy of Atlantis",
+    "description": "A modern remake of the original 1996 Tomb Raider. Lara Croft returns to her roots in a globetrotting adventure to find the Scion of Atlantis.",
+    "genres": ["Action-Adventure", "Puzzle", "Platformer"],
+    "platforms": ["PC", "PlayStation 5", "Xbox Series X/S"],
+    "release_year": 2026,
+    "rating": 9.0,
+    "developer": "Crystal Dynamics",
+    "similar_games": ["Uncharted 4", "Shadow of the Tomb Raider", "Resident Evil 4 Remake"]
+  },
+  "monster_hunter_wilds": {
+    "name": "Monster Hunter Wilds",
+    "description": "The latest evolution in the Monster Hunter series, featuring living, breathing ecosystems and seamless transitions between exploration and combat.",
+    "genres": ["Action RPG", "Hunting", "Co-op"],
+    "platforms": ["PC", "PlayStation 5", "Xbox Series X/S"],
+    "release_year": 2025,
+    "rating": 9.5,
+    "developer": "Capcom",
+    "similar_games": ["Monster Hunter World", "Dragon's Dogma 2", "Wild Hearts"]
+  },
+  "forza_horizon_6": {
+    "name": "Forza Horizon 6",
+    "description": "The premier open-world racing series heads to a stunning new location (rumored to be Japan), featuring the most diverse car list and weather systems yet.",
+    "genres": ["Racing", "Open World", "Sports"],
+    "platforms": ["PC", "Xbox Series X/S"],
+    "release_year": 2026,
+    "rating": 9.1,
+    "developer": "Playground Games",
+    "similar_games": ["Forza Horizon 5", "The Crew Motorfest", "Need for Speed Unbound"]
+  },
+  "ace_combat_8": {
+    "name": "Ace Combat 8: Wings of Theve",
+    "description": "A return to the Strangereal universe with cutting-edge aerial dogfighting and a cinematic story about the pilots who change the course of history.",
+    "genres": ["Flight Sim", "Action"],
+    "platforms": ["PC", "PlayStation 5", "Xbox Series X/S"],
+    "release_year": 2026,
+    "rating": 8.8,
+    "developer": "Project Aces",
+    "similar_games": ["Ace Combat 7", "Project Wingman", "Star Wars: Squadrons"]
+  },
+  "bio_shock_isolation": {
+    "name": "BioShock: Isolation",
+    "description": "Set in a new dystopian city with a 'two-city' dynamic (upper and lower), this entry explores the philosophical and societal consequences of isolated evolution.",
+    "genres": ["FPS", "RPG", "Sci-Fi"],
+    "platforms": ["PC", "PlayStation 5", "Xbox Series X/S"],
+    "release_year": 2026,
+    "rating": 9.2,
+    "developer": "Cloud Chamber",
+    "similar_games": ["BioShock Infinite", "Atomic Heart", "Dishonored 2"]
+  }
+}

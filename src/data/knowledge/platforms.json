@@ -1,0 +1,30 @@
+{
+  "pc": {
+    "name": "PC",
+    "description": "Personal computer gaming platform. Offers the most flexibility, best graphics (with powerful hardware), and largest game library.",
+    "advantages": ["Best graphics", "Mod support", "Largest library", "Customizable", "Multiple storefronts"],
+    "storefronts": ["Steam", "Epic Games Store", "GOG", "Xbox Game Pass PC"],
+    "popular_genres": ["Strategy", "MMORPG", "Simulation", "Indie"]
+  },
+  "playstation_5": {
+    "name": "PlayStation 5",
+    "description": "Sony's latest console featuring fast SSD, DualSense controller with haptic feedback, and exclusive titles.",
+    "advantages": ["Exclusive games", "DualSense features", "Fast loading", "4K gaming"],
+    "exclusives": ["God of War Ragnarök", "Spider-Man 2", "Demon's Souls", "Returnal"],
+    "popular_genres": ["Action", "Adventure", "RPG"]
+  },
+  "xbox_series_x": {
+    "name": "Xbox Series X/S",
+    "description": "Microsoft's latest consoles with Game Pass integration and backward compatibility.",
+    "advantages": ["Game Pass", "Backward compatibility", "Quick Resume", "Cross-play"],
+    "exclusives": ["Starfield", "Forza Horizon 5", "Halo Infinite"],
+    "popular_genres": ["Shooter", "Racing", "RPG"]
+  },
+  "nintendo_switch": {
+    "name": "Nintendo Switch",
+    "description": "Hybrid console that works as both handheld and home console. Known for first-party Nintendo games.",
+    "advantages": ["Portability", "Nintendo exclusives", "Local multiplayer", "Family-friendly"],
+    "exclusives": ["Zelda TOTK", "Mario Odyssey", "Animal Crossing", "Splatoon 3"],
+    "popular_genres": ["Platformer", "Adventure", "Party Games"]
+  }
+}

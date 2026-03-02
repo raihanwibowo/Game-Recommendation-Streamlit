@@ -1,7 +1,7 @@
 """UI components and layout"""
 import streamlit as st
 import os
-from packages.model import get_available_models
+from packages.api_client import get_api_client
 
 
 def setup_page_config():
@@ -24,25 +24,31 @@ def render_sidebar(messages):
     with st.sidebar:
         st.header("⚙️ Settings")
         
-        # Model info
+        # Model info from API
         ollama_model = os.getenv('OLLAMA_MODEL', 'llama3.2:3b')
-        available_models = get_available_models()
         
-        if available_models:
-            st.success(f"✅ Connected to Ollama")
-            st.caption(f"Model: **{ollama_model}**")
-            if ollama_model not in available_models:
-                st.warning(f"⚠️ Run: `ollama pull {ollama_model.split(':')[0]}`")
-        else:
-            st.caption(f"Model: {ollama_model}")
+        # Check API connection
+        try:
+            api_client = get_api_client()
+            health = api_client.health_check()
+            
+            if health.get('status') == 'healthy' and health.get('ollama') == 'connected':
+                st.success(f"✅ Connected to API & Ollama")
+                st.caption(f"Model: **{ollama_model}**")
+            else:
+                st.warning("⚠️ API connected but Ollama disconnected")
+                st.caption(f"Model: {ollama_model}")
+        except:
+            st.error("❌ Cannot connect to API")
+            st.caption("Make sure backend is running")
         
         st.divider()
         
         # Internet search toggle
         use_internet = st.checkbox(
             "🌐 Enable internet search", 
-            value=True, 
-            help="Search the web for current game information"
+            value=False,  # Disabled by default to prioritize knowledge base
+            help="Search the web for additional game information. Knowledge base is always prioritized."
         )
         
         st.divider()

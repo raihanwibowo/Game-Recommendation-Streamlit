@@ -13,7 +13,6 @@ from ui.ui import (
     render_chat_messages, 
     get_chat_input
 )
-from packages.model import get_llm_response
 from packages.database import get_database
 from packages.api_client import get_api_client
 import streamlit as st
@@ -63,12 +62,14 @@ if prompt := get_chat_input():
     
     # Get assistant response (uses full message history for context)
     with st.chat_message("assistant"):
-        # Call API instead of direct Ollama
-        result = api_client.chat(
-            prompt=prompt,
-            messages=st.session_state.messages,
-            use_search=use_internet
-        )
+        # Show thinking indicator
+        with st.spinner("🤔 Thinking..."):
+            # Call API instead of direct Ollama
+            result = api_client.chat(
+                prompt=prompt,
+                messages=st.session_state.messages,
+                use_search=use_internet
+            )
         
         if result.get('error'):
             response = f"❌ Error: {result.get('message')}"
