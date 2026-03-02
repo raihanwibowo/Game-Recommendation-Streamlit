@@ -15,9 +15,12 @@ from ui.ui import (
 )
 from packages.model import get_llm_response
 from packages.database import get_database
+from packages.api_client import get_api_client
+import streamlit as st
 
-# Initialize database
+# Initialize database and API client
 db = get_database()
+api_client = get_api_client()
 
 # Page config
 setup_page_config()
@@ -60,11 +63,25 @@ if prompt := get_chat_input():
     
     # Get assistant response (uses full message history for context)
     with st.chat_message("assistant"):
-        response = get_llm_response(
-            prompt, 
-            st.session_state.messages,  # Use full history for context
+        # Call API instead of direct Ollama
+        result = api_client.chat(
+            prompt=prompt,
+            messages=st.session_state.messages,
             use_search=use_internet
         )
+        
+        if result.get('error'):
+            response = f"❌ Error: {result.get('message')}"
+            st.error(response)
+        else:
+            response = result.get('response')
+            inference_time = result.get('inference_time', 0)
+            tokens_per_second = result.get('tokens_per_second', 0)
+            
+            # Display response with timing
+            timing_info = f"\n\n---\n*⏱️ Response time: {inference_time}s | Tokens/sec: {tokens_per_second}*"
+            st.markdown(response + timing_info)
+        
         st.session_state.messages.append({"role": "assistant", "content": response})
         st.session_state.display_messages.append({"role": "assistant", "content": response})
         
