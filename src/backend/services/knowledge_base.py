@@ -90,8 +90,17 @@ class GamingKnowledgeBase:
         logger.info(f"Searching for keyword: '{keyword}' in {len(self.games_db)} games")
         
         # Extract potential game names from the query (words with 3+ chars)
+        # Filter out common words that don't help identify games
+        common_words = {'what', 'the', 'from', 'rating', 'about', 'game', 'tell', 'for', 
+                       'beginners', 'best', 'good', 'recommend', 'games', 'when', 'does',
+                       'release', 'horror', 'action', 'adventure', 'rpg'}
         words = keyword_lower.split()
-        search_terms = [w for w in words if len(w) >= 3 and w not in ['what', 'the', 'from', 'rating', 'about', 'game', 'tell']]
+        search_terms = [w for w in words if len(w) >= 3 and w not in common_words]
+        
+        # If no search terms left (all were common words), don't search by keyword
+        if not search_terms:
+            logger.info("No specific search terms found (all common words)")
+            return []
         
         for game_id, game_data in self.games_db.items():
             name = game_data.get('name', '').lower()
@@ -134,12 +143,48 @@ class GamingKnowledgeBase:
         logger.info(f"Available games: {len(self.games_db)}, genres: {len(self.genres_db)}")
         
         context = "\n--- GAMING KNOWLEDGE BASE ---\n"
+        query_lower = query.lower()
         
-        # Search for relevant games
+        # Check if query is asking about a genre
+        genre_matches = []
+        for genre_key, genre_info in self.genres_db.items():
+            # Check if genre name appears in query
+            if genre_key in query_lower:
+                genre_matches.append((genre_key, genre_info))
+                logger.info(f"Found genre match: {genre_key}")
+        
+        # If genre found, search games by that genre
+        if genre_matches:
+            logger.info(f"Found {len(genre_matches)} genre matches")
+            for genre_key, genre_info in genre_matches[:2]:  # Max 2 genres
+                context += f"\nGenre: {genre_key.title()}\n"
+                context += f"Description: {genre_info.get('description', 'N/A')}\n"
+                
+                # Get games in this genre (search by genre keyword in game genres)
+                genre_games = []
+                for game_id, game_data in self.games_db.items():
+                    game_genres = [g.lower() for g in game_data.get('genres', [])]
+                    # Check if any game genre contains the search genre
+                    if any(genre_key in gg for gg in game_genres):
+                        genre_games.append(game_data)
+                
+                # Sort by rating
+                genre_games.sort(key=lambda x: x.get('rating', 0), reverse=True)
+                
+                if genre_games:
+                    context += f"\nTop {genre_key.title()} Games:\n"
+                    for game in genre_games[:5]:  # Top 5 games
+                        context += f"- {game.get('name')}: {game.get('description', 'N/A')}\n"
+                        context += f"  Rating: {game.get('rating', 'N/A')}\n"
+                        context += f"  Release Year: {game.get('release_year', 'N/A')}\n"
+                        context += f"  Genres: {', '.join(game.get('genres', []))}\n"
+                    logger.info(f"Added {len(genre_games[:5])} games for genre {genre_key}")
+        
+        # Search for specific games by keyword (only if no genre match or as supplement)
         games = self.search_games_by_keyword(query)
-        logger.info(f"Search returned {len(games)} games")
+        logger.info(f"Keyword search returned {len(games)} games")
         
-        if games:
+        if games and not genre_matches:  # Only add if no genre results
             context += "\nRelevant Games:\n"
             for game in games[:3]:
                 logger.info(f"Adding game to context: {game.get('name')} (rating: {game.get('rating')})")
@@ -150,22 +195,13 @@ class GamingKnowledgeBase:
                     context += f"  Release Year: {game.get('release_year')}\n"
                 if game.get('rating'):
                     context += f"  Rating: {game.get('rating')}\n"
-        else:
-            logger.warning("No games found in search!")
-        
-        # Check for genre information
-        for genre in self.genres_db.keys():
-            if genre in query.lower():
-                genre_info = self.genres_db[genre]
-                context += f"\nGenre Info - {genre.title()}:\n"
-                context += f"  {genre_info.get('description', 'N/A')}\n"
-                context += f"  Popular games: {', '.join(genre_info.get('popular_games', []))}\n"
         
         context += "--- END KNOWLEDGE BASE ---\n\n"
         
         has_content = len(context) > 100
         logger.info(f"Knowledge context generated: {len(context)} chars, has_content: {has_content}")
-        logger.info(f"Context preview: {context[:200]}...")
+        if has_content:
+            logger.info(f"Context preview: {context[:200]}...")
         
         return context if has_content else ""
 

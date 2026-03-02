@@ -348,5 +348,125 @@
     "rating": 9.2,
     "developer": "Cloud Chamber",
     "similar_games": ["BioShock Infinite", "Atomic Heart", "Dishonored 2"]
+  },
+  "last_of_us_part_2": {
+    "name": "The Last of Us Part II",
+    "description": "A brutal tale of revenge and consequences set in a post-pandemic America, following Ellie on a journey through Seattle.",
+    "genres": ["Action-Adventure", "Survival Horror", "Narrative"],
+    "platforms": ["PlayStation 4", "PlayStation 5"],
+    "release_year": 2020,
+    "rating": 9.3,
+    "developer": "Naughty Dog",
+    "similar_games": ["God of War", "Days Gone", "Uncharted 4"]
+  },
+  "animal_crossing_nh": {
+    "name": "Animal Crossing: New Horizons",
+    "description": "Escape to a deserted island and create your own paradise as you explore, create, and customize.",
+    "genres": ["Simulation", "Social"],
+    "platforms": ["Nintendo Switch"],
+    "release_year": 2020,
+    "rating": 9.0,
+    "developer": "Nintendo EPD",
+    "similar_games": ["Stardew Valley", "The Sims 4", "Disney Dreamlight Valley"]
+  },
+  "ratchet_clank_rift_apart": {
+    "name": "Ratchet & Clank: Rift Apart",
+    "description": "Go dimension-hopping with Ratchet and Clank as they take on an evil emperor from another reality.",
+    "genres": ["Platformer", "Action"],
+    "platforms": ["PlayStation 5", "PC"],
+    "release_year": 2021,
+    "rating": 8.9,
+    "developer": "Insomniac Games",
+    "similar_games": ["Jak and Daxter", "Spyro Reignited Trilogy", "Sly Cooper"]
+  },
+  "metroid_dread": {
+    "name": "Metroid Dread",
+    "description": "Samus Aran faces a mysterious new threat on planet ZDR in this return to the classic 2D Metroid style.",
+    "genres": ["Action-Adventure", "Metroidvania"],
+    "platforms": ["Nintendo Switch"],
+    "release_year": 2021,
+    "rating": 9.0,
+    "developer": "MercurySteam",
+    "similar_games": ["Hollow Knight", "Ori and the Will of the Wisps", "Castlevania"]
+  },
+  "psychonauts_2": {
+    "name": "Psychonauts 2",
+    "description": "Razputin Aquato, trained acrobat and powerful young psychic, realizes his dream of joining the Psychonauts.",
+    "genres": ["Platformer", "Adventure"],
+    "platforms": ["PC", "Xbox Series X/S", "PS4"],
+    "release_year": 2021,
+    "rating": 8.8,
+    "developer": "Double Fine",
+    "similar_games": ["Psychonauts", "A Hat in Time", "Banjo-Kazooie"]
+  },
+  "horizon_forbidden_west": {
+    "name": "Horizon Forbidden West",
+    "description": "Aloy braves the Forbidden West, a majestic but dangerous frontier that conceals mysterious new threats.",
+    "genres": ["Action", "RPG", "Open World"],
+    "platforms": ["PlayStation 5", "PlayStation 4", "PC"],
+    "release_year": 2022,
+    "rating": 8.8,
+    "developer": "Guerrilla Games",
+    "similar_games": ["Horizon Zero Dawn", "Assassin's Creed Valhalla", "Far Cry 6"]
+  },
+  "marvels_spider_man_2": {
+    "name": "Marvel's Spider-Man 2",
+    "description": "Peter Parker and Miles Morales return for an exciting new adventure in the critically acclaimed franchise.",
+    "genres": ["Action-Adventure", "Open World"],
+    "platforms": ["PlayStation 5"],
+    "release_year": 2023,
+    "rating": 9.1,
+    "developer": "Insomniac Games",
+    "similar_games": ["Spider-Man: Miles Morales", "Batman: Arkham City", "Infamous Second Son"]
+  },
+  "alan_wake_2": {
+    "name": "Alan Wake II",
+    "description": "A string of ritualistic murders threatens Bright Falls, an idyllic small-town community in the Pacific Northwest.",
+    "genres": ["Survival Horror", "Psychological Thriller"],
+    "platforms": ["PC", "PS5", "Xbox Series X/S"],
+    "release_year": 2023,
+    "rating": 9.5,
+    "developer": "Remedy Entertainment",
+    "similar_games": ["Control", "Resident Evil 4", "The Evil Within"]
+  },
+  "black_myth_wukong": {
+    "name": "Black Myth: Wukong",
+    "description": "An action RPG rooted in Chinese mythology, based on the classic novel Journey to the West.",
+    "genres": ["Action", "RPG"],
+    "platforms": ["PC", "PS5", "Xbox Series X/S"],
+    "release_year": 2024,
+    "rating": 8.6,
+    "developer": "Game Science",
+    "similar_games": ["Sekiro: Shadows Die Twice", "God of War", "Lies of P"]
+  },
+  "helldivers_2": {
+    "name": "Helldivers 2",
+    "description": "Join the Helldivers and fight for freedom across a hostile galaxy in a fast, frantic third-person shooter.",
+    "genres": ["Shooter", "Action", "Co-op"],
+    "platforms": ["PC", "PS5"],
+    "release_year": 2024,
+    "rating": 9.0,
+    "developer": "Arrowhead Game Studios",
+    "similar_games": ["Deep Rock Galactic", "Starship Troopers: Extermination", "Left 4 Dead 2"]
+  },
+  "ghost_of_yotei": {
+    "name": "Ghost of Yōtei",
+    "description": "Set in 1603, a new protagonist named Atsu embarks on a journey in the lands surrounding Mount Yōtei.",
+    "genres": ["Action", "Open World"],
+    "platforms": ["PlayStation 5"],
+    "release_year": 2025,
+    "rating": 9.4,
+    "developer": "Sucker Punch Productions",
+    "similar_games": ["Ghost of Tsushima", "Sekiro", "Assassin's Creed Shadows"]
+  },
+  "clair_obscur_expedition_33": {
+    "name": "Clair Obscur: Expedition 33",
+    "description": "A reactive turn-based RPG where you lead an expedition to destroy the Paintress once and for all.",
+    "genres": ["RPG", "Fantasy"],
+    "platforms": ["PC", "PS5", "Xbox Series X/S"],
+    "release_year": 2025,
+    "rating": 9.2,
+    "developer": "Sandfall Interactive",
+    "similar_games": ["Final Fantasy VII Rebirth", "Lost Odyssey", "Persona 5"]
   }
 }
